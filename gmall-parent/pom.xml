@@ -42,12 +42,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--因为使用的阿里dubbo所以要使用配套的fastjson通讯协议，如果使用gson会出现异常-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
-
+    <!--版本号等都在上边显示-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
@@ -72,7 +73,7 @@
                 <version>${mybatis.version}</version>
             </dependency>
 
-
+            <!--下边这三个是thymeleaf前端渲染框架，通俗的讲就是springboot的jsp-->
             <dependency>
                 <groupId>net.sourceforge.nekohtml</groupId>
                 <artifactId>nekohtml</artifactId>
@@ -99,6 +100,7 @@
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+            <!--通过java程序发送http协议-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>

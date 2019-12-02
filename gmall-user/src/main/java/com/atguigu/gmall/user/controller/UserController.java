@@ -17,6 +17,8 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
+    /*根据id查询收货地址*/
     @RequestMapping("getReceiveAddressByMemberId")
     public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId){
 
