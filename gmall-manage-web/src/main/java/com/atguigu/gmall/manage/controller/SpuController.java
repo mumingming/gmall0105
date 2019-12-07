@@ -29,7 +29,7 @@ public class SpuController {
         return pmsProductImages;
     }
 
-    //sku销售属性列表
+    //spu销售属性列表
     @RequestMapping("spuSaleAttrList")
     @ResponseBody
     public List<PmsProductSaleAttr> spuSaleAttrList(String spuId){

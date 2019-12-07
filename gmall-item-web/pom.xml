@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.atguigu.gmall</groupId>
-    <artifactId>gmall-manage-web</artifactId>
+    <artifactId>gmall-item-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gmall-manage-web</name>
+    <name>gmall-item-web</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -30,14 +30,12 @@
             <artifactId>gmall-web-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--//fastdfs上传图片到服务器-->
         <dependency>
-            <groupId>org.csource</groupId>
-            <artifactId>fastdfs-client-java</artifactId>
-            <version>1.27-SNAPSHOT</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>

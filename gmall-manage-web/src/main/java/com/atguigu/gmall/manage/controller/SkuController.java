@@ -25,11 +25,11 @@ public class SkuController {
         // 将spuId封装给productId
         pmsSkuInfo.setProductId(pmsSkuInfo.getSpuId());
 
-        // 处理默认图片
-        String skuDefaultImg = pmsSkuInfo.getSkuDefaultImg();
+        // 处理默认图片  如果没有设置默认图片  默认第一张
+       /* String skuDefaultImg = pmsSkuInfo.getSkuDefaultImg();
         if(StringUtils.isBlank(skuDefaultImg)){
             pmsSkuInfo.setSkuDefaultImg(pmsSkuInfo.getSkuImageList().get(0).getImgUrl());
-        }
+        }*/
 
 
         skuService.saveSkuInfo(pmsSkuInfo);
