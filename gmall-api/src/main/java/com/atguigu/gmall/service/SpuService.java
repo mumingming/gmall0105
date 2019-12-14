@@ -18,4 +18,7 @@ public interface SpuService {
 
     // spu的图片列表
     List<PmsProductImage> spuImageList(String spuId);
+
+    ////销售属性列表
+    List<PmsProductSaleAttr> spuSaleAttrListCheckBySku(String productId, String id);
 }
